@@ -28,7 +28,7 @@ os.environ ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
 #AI agent creation
 agent = Agent(
-    "google-gla:gemini-3.5-flash-lite",
+    "google:gemini-3.5-flash-lite",
     instructions=
         "You are PharmBot, a friendly educational assistant."
         "You specialize in prescrption drug shortages, pharmacy, and pharmaceutical supply chains."
