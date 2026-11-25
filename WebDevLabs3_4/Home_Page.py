@@ -1,3 +1,4 @@
+from pathlib import Path
 import streamlit as st
 
 st.set_page_config(
@@ -8,7 +9,8 @@ st.set_page_config(
 # Title of App
 st.title("Prescription Drug Shortages💊")
 
-st.image("images/pharmacy.jpg", use_container_width=True)
+st.image(str(Path(__file__).parent / "images" / "pharmacy.jpg"),
+    use_container_width=True)
 
 
 
